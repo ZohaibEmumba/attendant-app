@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
-import { Modal, Button, Form, Input, Select } from "antd";
+import { Modal, Button, Form, Input, Select, Col , Tooltip } from "antd";
 import { ButtonWrapper } from "./style";
 const { Option } = Select;
 
-const AddEmployee:FC = () => {
+const AddEmployee: FC = () => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
 
@@ -26,9 +26,16 @@ const AddEmployee:FC = () => {
   return (
     <div>
       <ButtonWrapper>
+        <Col lg={6}>
+        <Tooltip title="Search Employee" placement="bottom">
+          <Input placeholder="Search Employee" />
+          </Tooltip>
+        </Col>
+        <Tooltip title="Add Employee" placement="bottom">
         <Button type="primary" onClick={showModal}>
           ADD EMPLOYEE
         </Button>
+        </Tooltip>
       </ButtonWrapper>
       <Modal
         title="ADD EMPLOYEE"

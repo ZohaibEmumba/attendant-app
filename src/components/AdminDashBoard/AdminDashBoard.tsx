@@ -5,7 +5,7 @@ import { Section } from "./style";
 
 const { TabPane } = Tabs;
 
-const AdminDashBoard:FC = () => {
+const AdminDashBoard: FC = () => {
   const callback = (key: any) => {};
 
   return (
@@ -15,13 +15,13 @@ const AdminDashBoard:FC = () => {
           <EmployeesList />
         </TabPane>
         <TabPane tab="AVAILABLE EMPLOYEES" key="2">
-        <EmployeesList />
+          <EmployeesList />
         </TabPane>
         <TabPane tab="UNAVAILABLE EMPLOYEES" key="3">
-        <EmployeesList />
+          <EmployeesList />
         </TabPane>
         <TabPane tab="ON LEAVE EMPLOYEES" key="4">
-        <EmployeesList />
+          <EmployeesList />
         </TabPane>
       </Tabs>
     </Section>

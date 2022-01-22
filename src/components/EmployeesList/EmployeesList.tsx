@@ -8,26 +8,33 @@ const columns = [
   {
     title: "First Name",
     dataIndex: "firstname",
+    key: "firstname"
   },
   {
     title: "Last Name",
     dataIndex: "lastname",
+    key: "lastname",
+
   },
   {
     title: "Email",
     dataIndex: "email",
+    key: "email",
   },
   {
     title: "PIN",
     dataIndex: "pin",
+    key: "pin",
   },
   {
     title: "Department",
     dataIndex: "department",
+    key: "department",
   },
   {
     title: "Role",
     dataIndex: "role",
+    key: "role",
   },
   {
     title: "Action",
@@ -67,7 +74,6 @@ const EmployeesList:FC = () => {
       role: `Admin`,
     });
   }
-  
 
   return (
     <Section>
