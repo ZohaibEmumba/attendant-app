@@ -8,13 +8,12 @@ const columns = [
   {
     title: "First Name",
     dataIndex: "firstname",
-    key: "firstname"
+    key: "firstname",
   },
   {
     title: "Last Name",
     dataIndex: "lastname",
     key: "lastname",
-
   },
   {
     title: "Email",
@@ -60,15 +59,14 @@ const columns = [
   },
 ];
 
-const EmployeesList:FC = () => {
-    
+const EmployeesList: FC = () => {
   const data = [];
   for (let i = 0; i < 100; i++) {
     data.push({
       key: i,
       firstname: `Edward King ${i}`,
       lastname: ` King ${i}`,
-      email: `zohaibkhattak6@gmail.com`,
+      email: `mzohaibEmumba@gmail.com`,
       pin: `12${i}`,
       department: `London, Park Lane no. ${i}`,
       role: `Admin`,
@@ -77,11 +75,10 @@ const EmployeesList:FC = () => {
 
   return (
     <Section>
-     <AddEmployee />
+      <AddEmployee />
       <Table 
-       columns={columns} 
-       dataSource={data} 
-       />
+       columns={columns}
+       dataSource={data} />
     </Section>
   );
 };
