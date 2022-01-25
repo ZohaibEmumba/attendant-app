@@ -4,8 +4,8 @@ import { ButtonWrapper } from "./style";
 
 const ModalWrapper: FC = (props) => {
   const { children } = props;
-  const [visible, setVisible] = useState(false);
-  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [visible, setVisible] = useState<boolean>(false);
+  const [confirmLoading, setConfirmLoading] = useState<boolean>(false);
 
   const showModal = (): any => {
     setVisible(true);

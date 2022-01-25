@@ -1,4 +1,4 @@
-import { FC, useReducer } from "react";
+import React,{ FC, useReducer } from "react";
 import "./App.css";
 import {
   Reducer,
