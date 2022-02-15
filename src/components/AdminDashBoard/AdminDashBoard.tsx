@@ -6,7 +6,9 @@ import { Section } from "./style";
 const { TabPane } = Tabs;
 
 const AdminDashBoard: FC = () => {
-  const callback = (key: any) => {};
+  const callback = (key: any) => {
+    console.log("");
+  };
 
   return (
     <Section>

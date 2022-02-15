@@ -39,7 +39,6 @@ const columns = [
     title: "Action",
     dataIndex: "",
     key: "x",
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     render: () => (
       <div style={{ display: "flex", gap: "10px" }}>
         <EditOutlined
@@ -78,7 +77,8 @@ const EmployeesList: FC = () => {
       <AddEmployee />
       <Table 
        columns={columns}
-       dataSource={data} />
+       dataSource={data} 
+       />
     </Section>
   );
 };
